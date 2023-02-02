@@ -1,27 +1,96 @@
+/*Variables*/
 :root{
-    --font-family: 'Varela Round', sans-serif;
-    --color-1: #ccc;
-    --color-2: #000;
-    --color-3: #f4c531;
+  --font-family: 'Varela Round', sans-serif;
+  --mini-font: 0.8em;
+  --normal-font: 1em;
+  --bold-font: 1.5em;
+  --bolder-font: 2em;
+
+  --color-1: #0a1237;
+  --color-2: #172b69;
+  --color-3: #f1ebe0;
+  --color-4: #efb810;
+  --color-5: #99460e;
+  --shadow-1: rgba(0, 0, 0, 0.2);
+  --transition: 0.3s ease;
+  --line-height: 1.7em;
 }
 
+/*General*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: var(--font-family)
 }
-
 body {
-  background-color: var(--color-1);
-  margin: 1em;
+  background-color: var(--color-3);
+  padding: 1em;
+}
+.div-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-header{
-    padding: 1em;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-3);
-    border-radius: .4em;
+/*Header*/
+.header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 2em 0;
+  text-align: center;
+  background-color: var(--color-2);
+  color: var(--color-3);
+  border: .3em solid var(--color-1);
+  border-radius: .5em;
+  box-shadow: 0.3em 0.3em .3em var(--shadow-1);
+  transition: var(--transition);
+}
+/*typer:text*/
+.header-text p{
+  white-space: nowrap;
+  border-right: 1px solid;
+  width: 86ch;
+  animation: typing 10s steps(86) infinite, blink .5s infinite alternate;
+  overflow: hidden;
+}
+@keyframes typing {
+  from{width: 0;}
+}
+@keyframes blink {
+  50%{border-color: transparent;}
+}
+/*END typer:text*/
+.header-text p{
+  margin: .5em;
+}
+
+/*Main*/
+main{
+  margin: 3em 10em;
+  padding: 2em 0 100em 0;
+
+  color: var(--color-1);
+  border: .3em solid var(--color-1);
+  border-radius: .5em;
+  transition: var(--transition);
+}
+
+
+
+/*Hover: if cursor==true*/
+@media (hover: hover){
+  .header-text h4:hover{
+    color: var(--color-4);
+  }
+}
+
+/*Responsive: screen<1024*/
+@media screen and (max-width:1024px){
+  .header-text{
+    display: none;
+  }
 }

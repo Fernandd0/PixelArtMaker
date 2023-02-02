@@ -1,28 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixel Art Generator</title>
+    <title>Pixel Art Maker</title>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link
+    rel="touch-icon"
+    sizes="180x180"
+    href="assets/ico/icono.svg"
+    />
+    <link
+    rel="icon"
+    type="image/svg"
+    sizes="32x32"
+    href="assets/ico/icono.svg"
+    />
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css"/>
 
   </head>
   <body>
-    <header>
-        <div class="header-logo">
-            <h3>>efe/</h3>
-        </div>
+    <!--Header-->
+    <header class="header div-center">
+      <div class="container">
         <div class="header-title">
-            <h1>Pixel Art Maker</h1>
+          <h1>PIXEL ART MAKER</h1>
         </div>
         <div class="header-text">
-            <p>Crea tú pixel art con esta herramietna, basate en una iamgen y listo. Exportalo tambien gratis.</p>
+          <p>Crea tú pixel art; básate en una imagen o inspírate en un diseño de la parte inferior y listo. Expórtalo y compártelo.</p>
+          <h4>TODO GRATIS</h4>
         </div>
+      </div>
     </header>
+
+    <!--Main-->
+    <main class="div-center">
+      <div class="container">
+        <div class="tools">
+          <div class="tool-wrapper">
+            <div class="slider">
+              <label for="width-range">Cuadrícula Ancho</label>
+              <input type="range" id="width-range" min="1" max="45" />
+              <span id="width-value">00</span>
+            </div>
+            <div class="slider">
+              <label for="height-range">Cuadrícula Altura</label>
+              <input type="range" id="height-range" min="1" max="45" />
+              <span id="height-value">00</span>
+            </div>
+          </div>
+          <div class="tool-wrapper">
+            <button id="btn-submit-grid">Crear Cuadrícula</button>
+            <button id="btn-clear-grid">Borrar Cuadrícula</button>
+            <input type="color" id="color-input"/>
+            <button id="btn-erase">Borrador</button>
+            <button id="btn-paint">Pintar</button>
+          </div>
+        </div>
+        <div class="area"></div>
+      </div>
+    </main>
 
     <!-- Script -->
     <script src="assets/js/app.js"></script>
