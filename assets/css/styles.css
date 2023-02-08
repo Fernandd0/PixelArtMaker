@@ -24,7 +24,10 @@
   font-family: var(--font-family)
 }
 body {
-  background-color: var(--color-3);
+  background-image: url(../img/bg.png);
+  background-attachment: fixed;
+  background-size: cover;
+
   padding: 1em;
 }
 .div-center{
@@ -40,13 +43,8 @@ body {
   left: 0;
   z-index: 1;
   width: 100%;
-  padding: 2em 0;
   text-align: center;
-  background-color: var(--color-2);
   color: var(--color-3);
-  border: .3em solid var(--color-1);
-  border-radius: .5em;
-  box-shadow: 0.3em 0.3em .3em var(--shadow-1);
   transition: var(--transition);
 }
 /*typer:text*/
@@ -71,7 +69,7 @@ body {
 /*Main*/
 main{
   margin: 3em 10em;
-  padding: 2em 0 100em 0;
+  padding: 2em 0 10em 0;
 
   color: var(--color-1);
   border: .3em solid var(--color-1);
@@ -83,14 +81,14 @@ main{
 
 /*Hover: if cursor==true*/
 @media (hover: hover){
-  .header-text h4:hover{
-    color: var(--color-4);
-  }
 }
 
 /*Responsive: screen<1024*/
 @media screen and (max-width:1024px){
   .header-text{
     display: none;
+  }
+  main{
+    margin: 3em 1em;
   }
 }
