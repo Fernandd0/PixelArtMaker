@@ -113,6 +113,18 @@ main{
   transition: var(--transition);
 }
 
+footer{
+  height: 100px;
+  padding: 2em;
+  margin: 0em -4em;
+  color: var(--color-3);
+  text-shadow: var(--shadow-2) 0.1em 0.1em 0.2;
+
+  background-image: url(../img/bg_footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 /*Hover: if cursor==true*/
 @media (hover: hover){
