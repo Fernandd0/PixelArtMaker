@@ -29,45 +29,70 @@
 
   </head>
   <body>
-    <!--Header-->
-    <header class="header div-center">
-      <div class="container">
-        <div class="header-title">
-          <h1>PIXEL ART MAKER</h1>
+    <div class="first-zone">
+      <!--Header-->
+      <header class="header div-center">
+        <div class="content">
+          <div class="header-title">
+            <h1>PIXEL ART MAKER</h1>
+          </div>
+          <div class="header-text">
+            <p>Crea tú pixel art; básate en una imagen o inspírate en un diseño de la parte inferior y listo. Expórtalo y compártelo.</p>
+          </div>
         </div>
-        <div class="header-text">
-          <p>Crea tú pixel art; básate en una imagen o inspírate en un diseño de la parte inferior y listo. Expórtalo y compártelo.</p>
-        </div>
-      </div>
-    </header>
+      </header>
 
-    <!--Main-->
-    <main class="div-center">
-      <div class="container">
-        <div class="tools">
-          <div class="tool-wrapper">
-            <div class="slider">
-              <label for="width-range">Cuadrícula Ancho</label>
-              <input type="range" id="width-range" min="1" max="45" />
-              <span id="width-value">00</span>
-            </div>
-            <div class="slider">
-              <label for="height-range">Cuadrícula Altura</label>
-              <input type="range" id="height-range" min="1" max="45" />
-              <span id="height-value">00</span>
-            </div>
+      <!--Gallery-->
+      <div class="container div-center">
+        <div class="gallery-container">
+          <div class="gallery-title">
+            <h3>PIXEL ARTS</h3>
           </div>
-          <div class="tool-wrapper">
-            <button id="btn-submit-grid">Crear Cuadrícula</button>
-            <button id="btn-clear-grid">Borrar Cuadrícula</button>
-            <input type="color" id="color-input"/>
-            <button id="btn-erase">Borrador</button>
-            <button id="btn-paint">Pintar</button>
+          <div class="gallery-PA">
+            <img class="img-PA border" src="assets/img/PA2.png" alt="Example 2" width="300" height="200">
+            <img class="img-PA border" src="assets/img/PA3.png" alt="Example 3" width="300" height="200">
+            <img class="img-PA border" src="assets/img/PA4.png" alt="Example 2" width="300" height="200">
+            <img class="img-PA border" src="assets/img/PA1.jpg" alt="Example 1" width="300" height="200">
+            <img class="img-PA border" src="assets/img/PA5.png" alt="Example 5" width="300" height="200">
+            <img class="img-PA border" src="assets/img/PA6.png" alt="Example 6" width="300" height="200">
+            <img class="img-PA border" src="assets/img/PA7.png" alt="Example 7" width="300" height="200">
+            <img class="img-PA border" src="assets/img/PA8.png" alt="Example 8" width="300" height="200">
           </div>
         </div>
-        <div class="area"></div>
       </div>
-    </main>
+    </div>
+
+    <div class="main-zone">
+      <!--Main-->
+      <main class="div-center">
+        <div class="container">
+          <div class="tools">
+            <div class="tool-wrapper">
+              <div class="slider">
+                <label for="width-range">Cuadrícula Ancho</label>
+                <input type="range" id="width-range" min="1" max="45" />
+                <span id="width-value">00</span>
+              </div>
+              <div class="slider">
+                <label for="height-range">Cuadrícula Altura</label>
+                <input type="range" id="height-range" min="1" max="45" />
+                <span id="height-value">00</span>
+              </div>
+            </div>
+            <div class="tool-wrapper">
+              <button id="btn-submit-grid">Crear Cuadrícula</button>
+              <button id="btn-clear-grid">Borrar Cuadrícula</button>
+              <input type="color" id="color-input"/>
+              <button id="btn-erase">Borrador</button>
+              <button id="btn-paint">Pintar</button>
+            </div>
+          </div>
+          <div class="area"></div>
+        </div>
+      </main>
+    </div>
+
+
 
     <!-- Script -->
     <script src="assets/js/app.js"></script>
