@@ -34,7 +34,7 @@ body {
 }
 .border{
   border: .3em solid var(--color-2);
-  border-radius: 1em;
+  border-radius: 1.5em;
 }
 
 
@@ -87,19 +87,14 @@ body {
   justify-content: center;
 }
 .img-PA{
+  opacity: 0.8;
   margin: .5em;
   display: flex;
   flex-direction: column;
   min-width: 250px;
-  opacity: 0.8;
-  transition: transform .3s;
   cursor: pointer;
   object-fit: cover;
-}
-.img-PA:hover {
-  transform: scale(1.5);
-  opacity: 1;
-  z-index: 3;
+  transition: transform .3s ease-out;
 }
 
 .main-zone{
@@ -128,6 +123,13 @@ footer{
 
 /*Hover: if cursor==true*/
 @media (hover: hover){
+  /*Img  de Gallery*/
+  .img-PA:hover {
+    opacity: 1;
+    z-index: 3;
+    transform: scale(1.5);
+    box-shadow: 0 0.6em 1em var(--color-2);
+  }
 }
 
 /*Responsive: screen<1024*/
