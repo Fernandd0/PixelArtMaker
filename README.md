@@ -5,9 +5,9 @@
     <img align="center" alt="javascript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
 </div></br>
 
-<a href="https://fernandd0.github.io/pixelArtMaker/">Web Site</a> para generar pixel art, descargarlo como imagen y compartirlo.
+<a href="https://fernandd0.github.io/pixelArtMaker/">Web Site</a> para generar pixel art.
 
-![PIXELARTMAKER]()
+![PIXELARTMAKER](assets/img/pixelArtMaker.png)
 
 </br></br>
 
